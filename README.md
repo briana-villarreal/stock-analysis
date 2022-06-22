@@ -14,8 +14,17 @@ I ran my program and entered 2017 as the date in the InputBox. Upon running the 
 To analyze the total daily volume and yearly retutn of DAQO's stock with others, I ran the same code and subroutine ""AllStocksAnalysis" as I did for 2017. To ensure I ran the code correctly, I entered the year 2018 when prompted by the InputBox. Upon running the code, I found that the DAQO stock (ticker name DQ) had a total daily volume of 107,873,900 and a return of -62.6%. In 2018, the stock was traded more as displayed by a higher total daily volume. However, the investment shrunk as shown by a negative return value. This indicates that DAQO may not be a suitable company for Steve's parents to invest in.
 ![2018 excel snip](https://user-images.githubusercontent.com/106560739/174712289-ec58fd5b-0279-4b42-821a-86303fadae79.png)
 ### Execution Time of Original Script
-g
+Since my client desires to know how fast the code can complie results, I created a script that calculated how long the code takes to execute and output the elapsed time in a message box. I utilized VBA's timer function and initialized two variables "startTime" and "endTime". I set both variables equal to zero. I ensured the data types were Single and set "startTime" equal to the Timer function to start the clock. I then set "endTime" equal to the Timer function. 
+![start original ](https://user-images.githubusercontent.com/106560739/174936673-784b68ee-7418-4d06-bc25-32c233fdc85e.png)
+![end original ](https://user-images.githubusercontent.com/106560739/174936682-ae3dab9e-67a6-4ddc-b3bd-a9f03ca74126.png)
+A message box displayed the execution time of the code for the years 2017 and 2018. The results were obtained by subtracting the startTime and endTime. 
+![2017 run time original ](https://user-images.githubusercontent.com/106560739/174936396-d4127973-536a-41d0-8149-d395f476ff73.png)
+![2018 run time original](https://user-images.githubusercontent.com/106560739/174936287-6d557a4d-7db4-45d3-b87d-104cb6c44fd9.png)
 ### Execution Time of Refactored Script
+Since my client desires to run quick analysis on larger stock datasets, I refactored the original code to ensure that the total execution time decreases. The script, which calculated how long the code takes to execute and output the elapsed time in a message box, remained the same. I still utilized VBA's Timer function to obtain results. 
+A message box displayed the execution time of the refactored code for the years 2017 and 2018. The results were obtained by subtracting the startTime and endTime. The execution times for both years using the refactored code were significantly faster, which allows more efficient analysis to be completed by my client. 
+![VBA_Challenge_2017](https://user-images.githubusercontent.com/106560739/174937524-c6ebe19b-80ec-486e-9762-9842710cddc1.png)
+![VBA_Challenge_2018](https://user-images.githubusercontent.com/106560739/174937532-3cff9d75-6a05-43c1-93c0-505a037d6f70.png)
 ## Summary
-- What are the advantages or disadvantages of refactoring code?
-- How do these pros and cons apply to refactoring the original VBA script?
+- What are the advantages or disadvantages of refactoring code? There are notable advantages to refactoring code including maintaining the original functionality of the code, facilitaing the extendibility of the software, improving the logic of the code, increaseing legibility of the code for other programmers, and ensuring efficiency. However, therea are some disadvantages of refactoring. Imprecise refactoring could introduce new bugs and errors into the code. Also when collaborating with teams of programmers, refactoring requires a higher coordination effort.  
+- How do these pros and cons apply to refactoring the original VBA script? The pros of refactoring code are shown through our refractored VBA script. The refactored code allowed my client to run more efficient analysis on larger datasets. For the programmer, it increased readability and overall comprehension. The cons of refactoring code were not as apparent in the VBA script. No errors were introduced in the code and I was not in collaboration with other individuals. 
